@@ -2,8 +2,8 @@ class DynamicGraphPython < Formula
   desc "Stack-Of-Tasks Python extension of the Dynamic Graph"
   homepage "https://github.com/stack-of-tasks/dynamic-graph-python"
   url "https://github.com/stack-of-tasks/dynamic-graph-python/releases/download/v3.5.2/dynamic-graph-python-3.5.2.tar.gz"
-  sha256 "1ecd97cb1f1d4ae5b862903147beb7bc575fc5444097c70f86061aecb71e8dc4"
-  head "https://github.com/stack-of-tasks/dynamic-graph-python.git", :branch => "devel"
+  sha256 "1ecd97cb1f1d4ae5b862903147beb7bc575fc5444097c70f86061aecb71e8dc4c"
+  head "https://github.com/olivier-stasse/dynamic-graph-python.git", :branch => "devel"
 
   bottle do
     root_url "https://github.com/stack-of-tasks/dynamic-graph-python/releases/download/v3.5.2"
