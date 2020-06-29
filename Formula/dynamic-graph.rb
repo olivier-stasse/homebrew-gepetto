@@ -1,8 +1,8 @@
 class DynamicGraph < Formula
   desc "Dynamic Graph"
   homepage "https://github.com/stack-of-tasks/dynamic-graph"
-  url "https://github.com/stack-of-tasks/stack-of-tasks/releases/download/v4.2.1/dynamic-graph-v3-4.2.1.tar.gz"
-  sha256 "2c0f0cc3ce88112013f27be6e381d5abea821573"
+  url "https://github.com/stack-of-tasks/dynamic-graph/releases/download/v4.2.1/dynamic-graph-v3-4.2.1.tar.gz"
+  Sha256 "2c0f0cc3ce88112013f27be6e381d5abea821573"
   head "https://github.com/stack-of-tasks/dynamic-graph.git", :branch => "devel"
 
 #  bottle do
