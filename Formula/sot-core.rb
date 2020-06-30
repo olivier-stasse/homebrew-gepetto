@@ -1,5 +1,5 @@
 class SotCore < Formula
-  desc "Stack-Of-Tasks sot-core
+  desc "Stack-Of-Tasks sot-core"
   homepage "https://github.com/stack-of-tasks/sot-core"
   url "https://github.com/stack-of-tasks/sot-core/releases/download/v4.9.1/sot-core-4.9.1.tar.gz"
   sha256 "1ecd97cb1f1d4ae5b862903147beb7bc575fc5444097c70f86061aecb71e8dc4c"
