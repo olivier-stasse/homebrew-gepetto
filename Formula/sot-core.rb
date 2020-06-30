@@ -15,6 +15,7 @@ class SotCore < Formula
   depends_on "doxygen" => :build
   depends_on "eigen"
   depends_on "python@3" => :build
+  depends_on "dynamic-graph-python" => :build
 
   def install
     if build.head?
