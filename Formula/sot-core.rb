@@ -14,9 +14,10 @@ class SotCore < Formula
   depends_on "pkg-config" => :build
   depends_on "doxygen" => :build
   depends_on "eigen"
-  depends_on "python@3" => :build
+  depends_on "python@3.8" => :build
   depends_on "dynamic-graph-python" => :build
-
+  depends_on "boost-python3" => recommended
+  
   def install
     if build.head?
       system "git submodule update --init"
