@@ -23,9 +23,13 @@ class SotCore < Formula
       system "git submodule update --init"
       system "git pull --unshallow --tags" 
     end
+    
+    pyver = Language::Python.major_minor_version Formula["python@3.8"].opt_bin/"python3"
+    py_prefix = Formula["python@3.8"].opt_frameworks/"Python.framework/Versions/#{pyver}"
 
     mkdir "build" do
       args = *std_cmake_args
+      args << "-DPYTHON_EXECUTABLE=#{py_prefix}/bin/python#{pyver}"
       args << "-DBUILD_UNIT_TESTS=OFF"
       system "cmake", "..", *args
       system "make"
