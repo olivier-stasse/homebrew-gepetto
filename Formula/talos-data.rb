@@ -1,8 +1,8 @@
 class TalosData < Formula
-  desc "Stack-Of-Tasks talos-data"
+  desc "Stack-Of-Tasks talos-data "
   homepage "https://github.com/stack-of-tasks/talos_data"
   url "https://github.com/stack-of-tasks/talos-data/releases/download/v1.2.2/talos_data-1.2.2.tar.gz"
-  sha256 "1ecd97cb1f1d4ae5b862903147beb7bc575fc5444097c70f86061aecb71e8dc4c"
+  sha256 "18e551e9e3f19ea8a8fe72896bc7924d8f27eb0dec2501b673214071fcda8dbb"
   head "https://github.com/stack-of-tasks/talos_data.git", :branch => "devel"
 
   bottle do
