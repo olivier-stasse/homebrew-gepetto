@@ -3,7 +3,7 @@ class TalosData < Formula
   homepage "https://github.com/stack-of-tasks/talos_data"
   url "https://github.com/stack-of-tasks/talos-data/releases/download/v1.2.2/talos_data-1.2.2.tar.gz"
   sha256 "18e551e9e3f19ea8a8fe72896bc7924d8f27eb0dec2501b673214071fcda8dbb"
-  head "https://github.com/olivier-stasse/talos_data.git", :Branch => "devel"
+  head "https://github.com/olivier-stasse/talos_data.git", :branch => "devel"
 
   bottle do
     root_url "https://github.com/stack-of-tasks/talos_data/releases/download/v1.2.2"
