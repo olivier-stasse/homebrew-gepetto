@@ -17,6 +17,7 @@ class SotCore < Formula
   depends_on "python@3.8" => :build
   depends_on "dynamic-graph-python" => :build
   depends_on "boost-python3" => :recommended
+  depends_on "pinocchio" => :build
   
   def install
     if build.head?
@@ -31,6 +32,7 @@ class SotCore < Formula
       args = *std_cmake_args
       args << "-DPYTHON_EXECUTABLE=#{py_prefix}/bin/python#{pyver}"
       args << "-DBUILD_UNIT_TESTS=OFF"
+      args << "-DCMAKE_BUILD_TYPE=Release"
       system "cmake", "..", *args
       system "make"
       system "make", "install"
