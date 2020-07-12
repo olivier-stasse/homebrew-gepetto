@@ -17,7 +17,7 @@ class SotCore < Formula
   depends_on "python@3.8" => :build
   depends_on "dynamic-graph-python" => :build
   depends_on "boost-python3" => :recommended
-  depends_on "pinocchio" => :build
+  depends_on "gepetto/gepetto/pinocchio" => :build
   
   def install
     if build.head?
