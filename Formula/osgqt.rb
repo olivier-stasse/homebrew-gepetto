@@ -17,7 +17,7 @@ class Osgqt < Formula
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
 
-  depends_on "gepetto/gepetto/open-scene-graph-with-colladadom"
+  depends_on "olivier-stasse/gepetto/open-scene-graph-with-colladadom"
   depends_on "qt"
 
   depends_on "doxygen" => :build if build.with? "docs"

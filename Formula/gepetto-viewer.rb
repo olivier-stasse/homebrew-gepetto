@@ -15,7 +15,7 @@ class GepettoViewer < Formula
   depends_on "pkg-config" => :build
   depends_on "doxygen" => :build
   depends_on "boost"
-  depends_on "gepetto/gepetto/open-scene-graph-with-colladadom"
+  depends_on "olivier-stasse/gepetto/open-scene-graph-with-colladadom"
   depends_on "urdfdom"
   depends_on "osgqt"
   depends_on :x11
