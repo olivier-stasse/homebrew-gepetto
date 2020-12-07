@@ -14,7 +14,7 @@ class DynamicGraphPython < Formula
   depends_on "pkg-config" => :build
   depends_on "doxygen" => :build
   depends_on "eigen"
-  depends_on "python@3.8" => :build
+  depends_on "python@3.9" => :build
 
   def install
     if build.head?
@@ -22,8 +22,8 @@ class DynamicGraphPython < Formula
       system "git pull --unshallow --tags" 
     end
 
-    pyver = Language::Python.major_minor_version Formula["python@3.8"].opt_bin/"python3"
-    py_prefix = Formula["python@3.8"].opt_frameworks/"Python.framework/Versions/#{pyver}"
+    pyver = Language::Python.major_minor_version Formula["python@3.9"].opt_bin/"python3"
+    py_prefix = Formula["python@3.9"].opt_frameworks/"Python.framework/Versions/#{pyver}"
     
     mkdir "build" do
       args = *std_cmake_args
